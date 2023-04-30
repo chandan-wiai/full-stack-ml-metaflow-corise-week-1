@@ -12,7 +12,7 @@ class BaselineNLPFlow(FlowSpec):
     split_size = Parameter('split-sz', default=0.2)
     # In order to use a file as an input parameter for a particular Flow we can use IncludeFile
     # More information can be found here https://docs.metaflow.org/api/flowspec#includefile
-    data = IncludeFile('data', default='data/Womens Clothing E-Commerce Reviews.csv')
+    data = IncludeFile('data', default='../data/Womens Clothing E-Commerce Reviews.csv')
 
     @step
     def start(self):
